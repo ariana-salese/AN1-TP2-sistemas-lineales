@@ -45,6 +45,7 @@ function solucion = sustitucion_inversa(A, b)
   suma = 0;
   
   for i = n-1:-1:1
+       suma = 0;
     for j = i+1:n
        suma = suma + A(i,j) * solucion(j,1);
     endfor
