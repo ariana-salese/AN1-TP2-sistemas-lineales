@@ -42,12 +42,13 @@ function solucion = sustitucion_inversa(A, b)
   solucion = zeros(n,1);
   
   solucion(n,1) = b(n) / A(n,n);
+  suma = 0;
   
   for i = n-1:-1:1
     for j = i+1:n
-       suma = A(i,j) * solucion(j,1);
+       suma = suma + A(i,j) * solucion(j,1);
     endfor
-    solucion(i,1) = b(i) - suma;
+    solucion(i,1) = (b(i) - suma)/A(i,i);
   endfor
   
 endfunction
