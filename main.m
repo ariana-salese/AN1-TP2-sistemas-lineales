@@ -1,6 +1,8 @@
 
 #MATRIZ AMPLIADA A RESOLVER
 
+output_precision(6)
+
 A = [1 -25 -50 0 0 0; -25 56 -1 -30 0 0; -50 -1 106 -55 0 0; 0 -30 -55 160 -25 -50; 0 0 0 -25 56 -1; 0 0 0 -50 -1 106];
 b = [10; 0; 0; 0; 0; 0];
 
@@ -30,5 +32,12 @@ disp(metodoLU(A, b, 6));
 
 #-------------------------------------------- PUNTO C ------------------------------------------------------------
 
+disp('');
+disp('----RESULTADO C-----');
+disp('');
 
+disp('inversa de A:')
+disp(inversa(A, 6));
 
+disp('numero de condicion de A:')
+disp(numero_condicion_matriz(A, 6))
