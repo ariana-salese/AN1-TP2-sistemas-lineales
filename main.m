@@ -41,3 +41,11 @@ disp(inversa(A, 6));
 
 disp('numero de condicion de A:')
 disp(numero_condicion_matriz(A, 6))
+
+#-------------------------------------------- PUNTO D ------------------------------------------------------------
+
+disp('');
+disp('----RESULTADO D-----');
+disp('');
+
+disp(metodoGaussSeidel(1))
