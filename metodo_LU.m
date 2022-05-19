@@ -1,5 +1,5 @@
 
-function matriz_resultado = metodoLU(A, b_matriz, ds)
+function matriz_resultado = metodo_LU(A, b_matriz, ds)
   col_b = columns(b_matriz);
   fil_b = rows(b_matriz);
   

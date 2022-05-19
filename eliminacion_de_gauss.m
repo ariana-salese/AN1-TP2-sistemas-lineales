@@ -1,5 +1,5 @@
 
-function vector_resultado = eliminacionDeGauss(A, b, ds)
+function vector_resultado = eliminacion_de_gauss(A, b, ds)
   
   [matriz_triangular_a, vector_b, _] = triangulacion(A, b, ds);
   

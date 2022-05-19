@@ -57,7 +57,6 @@ disp('----RESULTADO E-----');
 disp('');
 
 voltajes = [0 10; 3 10.20; 6 10.30; 9 10.05; 12 9.95; 15 9.85; 18 9.80; 21 10.05; 24 10.15]
-
 voltajes_res = interpolacionLineal(voltajes);
 disp(voltajes_res)
 
